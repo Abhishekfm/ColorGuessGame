@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko&family=Handlee&family=Josefin+Sans:wght@200;300;400;500;600;700&family=Just+Another+Hand&family=Poppins:wght@400;500;600;700&display=swap');
+
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* background: #333; */
+    background-image: 
+    radial-gradient(ellipse at bottom left, rgba(0,163,203,1) 40%, rgba(0,163,203,0) 40%),
+    radial-gradient(ellipse at top right, rgba(0,163,203,1) 30%, rgba(0,163,203,0) 30%),
+    linear-gradient(to right, rgba(98,87,147,1) 0%, rgba(98,87,147,1) 33%, rgba(213,93,100,1) 33%, rgba(213,93,100,1) 66%, rgba(228,145,41,1) 66%);
+    background-size: 50% 100%;
+}
+
+.head{
+    text-align: center;
+    /* font-family: 'Handlee', cursive; */
+    font-family: 'Poppins', sans-serif;
+}
+
+.head h1{
+    font-size: 28px;
+    text-shadow: .1em .1em 0 rgb(50, 107, 141);
+}
+
+.head h2{
+    /* font-weight: 400; */
+    font-family: 'Handlee', cursive; 
+}
+.score{
+    display: flex;
+    justify-content: space-around;
+    /* width: 500px; */
+    /* padding-top: 20px; */
+    font-family: 'Handlee', cursive; 
+    font-weight: 600;
+}
+.rst{
+    margin-top: 12px;
+    font-family: 'Handlee', cursive; 
+    letter-spacing: 1px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    background: transparentize(#fff, 0.8);
+    text-shadow: 0 0 1em transparentize(#000, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+    border: 17px solid transparentize(#fff, 0.2);
+}
+
+.screen{
+    display: flex;
+    width: 90%;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Handlee', cursive; */
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    transition: 1s;
+}
+
+.input{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.btn{
+    height: 80px;
+    background-color: #000;
+    border-radius: 10px 4px 10px 4px;
+    transition: 1s;
+    border: 1px solid #000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    
+    /* border: 17px solid transparentize(#fff, 0.2); */
+}
+
+.rst{
+    padding: 4px 10px;
+    background-color: #000;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    border: 17px solid transparentize(#fff, 0.2);
+}
+
+.hidden{
+    display: none;
+}
+
+/* 
+font-family: 'Dekko', cursive;
+font-family: 'Handlee', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Just Another Hand', cursive; no
+font-family: 'Poppins', sans-serif; */
+
+
+@media screen and (max-width:530px) {
+    .card{
+        width: 400px;
+    }
+}
+@media screen and (max-width:400px) {
+    .card{
+        width: 300px;
+    }
+}
